@@ -11,21 +11,20 @@ class RollTheDice extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        brightness: Brightness.light,
-        primaryColor: Colors.blueGrey,
-      ),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Roll the Dice!'),
-        ),
-        body: const Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Hello World!'),
-              Text('It\'s time to learn Flutter!'),
-            ],
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Colors.indigo, Colors.black],
+            ),
+          ),
+          child: const Center(
+            child: Text(
+              'Hello World!',
+              style: TextStyle(fontSize: 48, color: Colors.white),
+            ),
           ),
         ),
       ),

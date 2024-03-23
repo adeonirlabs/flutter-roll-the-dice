@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roll_the_dice/gradient_container.dart';
 
 void main() {
   runApp(const RollTheDice());
@@ -9,24 +10,10 @@ class RollTheDice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [Colors.indigo, Colors.black],
-            ),
-          ),
-          child: const Center(
-            child: Text(
-              'Hello World!',
-              style: TextStyle(fontSize: 48, color: Colors.white),
-            ),
-          ),
-        ),
+        body: GradientContainer(),
       ),
     );
   }

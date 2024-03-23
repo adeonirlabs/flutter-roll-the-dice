@@ -1,16 +1,13 @@
-# roll_the_dice
+# Roll The Dice
 
-A new Flutter project.
+<img src=".github/roll-the-dice.png" />
 
-## Getting Started
+## About the project
 
-This project is a starting point for a Flutter application.
+Roll The Dice is a cross-platform application built using Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+This is my first project using Flutter. I'm following a Udemy's course, but it has some tweeks on the design and functionalities.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The main feature of the application is to simulate the roll of a dice. Showing you a different dice on every turn, without repeating the last one.

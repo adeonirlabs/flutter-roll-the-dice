@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roll_the_dice/content_text.dart';
 import 'package:roll_the_dice/gradient_container.dart';
 
 void main() {
@@ -13,7 +14,9 @@ class RollTheDice extends StatelessWidget {
     return const MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        body: GradientContainer(),
+        body: GradientContainer(
+          child: StyledText('Hello World!'),
+        ),
       ),
     );
   }

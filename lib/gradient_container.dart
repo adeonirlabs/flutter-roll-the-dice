@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:roll_the_dice/content_text.dart';
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer({super.key, required this.child});
+
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +15,8 @@ class GradientContainer extends StatelessWidget {
           colors: [Colors.indigo, Colors.black],
         ),
       ),
-      child: const Center(
-        child: StyledText('Hello World!'),
+      child: Center(
+        child: child,
       ),
     );
   }

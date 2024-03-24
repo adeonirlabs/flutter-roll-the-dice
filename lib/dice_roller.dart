@@ -15,7 +15,7 @@ class DiceRoller extends StatefulWidget {
 class _DiceRollerState extends State<DiceRoller> {
   var currentDice = 1;
 
-  void onRollDice() {
+  void handleDiceRoll() {
     setState(() {
       int newDice;
       do {
@@ -36,7 +36,7 @@ class _DiceRollerState extends State<DiceRoller> {
         ),
         const SizedBox(height: 24),
         TextButton(
-          onPressed: onRollDice,
+          onPressed: handleDiceRoll,
           style: TextButton.styleFrom(
             foregroundColor: Colors.white,
             backgroundColor: Colors.indigoAccent,
